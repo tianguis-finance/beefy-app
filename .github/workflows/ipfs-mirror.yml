@@ -1,0 +1,36 @@
+name: IPFS Mirror
+
+on:
+  push:
+    branches:
+      - ipfs
+
+jobs:
+  deploy-bsc:
+    name: Deploy-BSC
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+
+      - name: Install yarn
+        run: npm install -g yarn
+
+      - name: Install ipfs-deploy
+        run: yarn global add ipfs-deploy
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build
+        run: yarn build
+        env:
+          REACT_APP_NETWORK_ID: 56
+
+      - name: Deploy
+        run: ipfs-deploy ./dist -p pinata
+        env:
+          IPFS_DEPLOY_PINATA__API_KEY: ${{ secrets.PINATA_API_KEY }}
+          IPFS_DEPLOY_PINATA__SECRET_API_KEY: ${{ secrets.PINATA_API_SECRET }}
