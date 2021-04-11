@@ -15,12 +15,11 @@ jobs:
       - uses: actions/checkout@v1
       - uses: actions/setup-node@v1
 
-      - name: Install yarn
-        run: npm install -g yarn
-
       - name: Install ipfs-deploy
-        run: yarn global add ipfs-deploy
-
+        run: |
+          yarn global add ipfs-deploy
+          echo "$(yarn global bin)" >> $GITHUB_PATH
+      
       - name: Install dependencies
         run: yarn install
 

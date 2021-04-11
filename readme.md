@@ -1,5 +1,8 @@
 # Beefy Finance (\$BIFI)
 
+[![IPFS Mirror](https://github.com/beefyfinance/beefy-app/actions/workflows/ipfs-mirror.yml/badge.svg)](https://github.com/beefyfinance/beefy-app/actions/workflows/ipfs-mirror.yml)
+
+
 ## Overview
 
 Official frontend repo of [beefy.finance](https://app.beefy.finance). Multichain yield farming optimizer.
