@@ -9,7 +9,7 @@ import history from './common/history';
 import { initializePriceCache } from './features/web3/fetchPrice'
 
 setConfig({
-  logLevel: 'debug',
+  logLevel: 'warn',
 });
 
 function renderRouteConfigV3(routes, contextPath) {
