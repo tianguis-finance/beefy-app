@@ -28,6 +28,7 @@ jobs:
         run: yarn build
         env:
           REACT_APP_NETWORK_ID: 56
+          CI: false
 
       - name: Deploy
         run: ipfs-deploy ./dist -p pinata
