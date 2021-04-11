@@ -30,7 +30,7 @@ jobs:
           CI: false
 
       - name: Deploy
-        run: ipfs-deploy ./build -p pinata
+        run: ipfs-deploy ./build -p pinata -O -C
         env:
           IPFS_DEPLOY_PINATA__API_KEY: ${{ secrets.PINATA_API_KEY }}
           IPFS_DEPLOY_PINATA__SECRET_API_KEY: ${{ secrets.PINATA_API_SECRET }}
