@@ -16,30 +16,30 @@ import { vaultABI, strategyABI } from '../src/features/configure/abi.js';
 
 const chainPools = {
   bsc: bscPools,
-  heco: hecoPools,
+  /*   heco: hecoPools,
   avax: avalanchePools,
   polygon: polygonPools,
   fantom: fantomPools,
   one: harmonyPools,
-  arbitrum: arbitrumPools,
+  arbitrum: arbitrumPools, */
 };
 
 const chainRpcs = {
   bsc: process.env.BSC_RPC || 'https://bsc-dataseed.binance.org/',
-  heco: process.env.HECO_RPC || 'https://http-mainnet.hecochain.com',
+  /*   heco: process.env.HECO_RPC || 'https://http-mainnet.hecochain.com',
   avax: process.env.AVAX_RPC || 'https://api.avax.network/ext/bc/C/rpc',
   polygon: process.env.POLYGON_RPC || 'https://polygon-rpc.com',
   fantom: process.env.FANTOM_RPC || 'https://rpc.ftm.tools/',
   one: process.env.HARMONY_RPC || 'https://api.s0.t.hmny.io/',
-  arbitrum: process.env.ARBITRUM_RPC || 'https://arb1.arbitrum.io/rpc',
+  arbitrum: process.env.ARBITRUM_RPC || 'https://arb1.arbitrum.io/rpc', */
 };
 
 const overrides = {
-  'bunny-bunny-eol': { keeper: undefined, stratOwner: undefined },
+  /* 'bunny-bunny-eol': { keeper: undefined, stratOwner: undefined },
   'blizzard-xblzd-bnb-old-eol': { keeper: undefined },
   'blizzard-xblzd-busd-old-eol': { keeper: undefined },
   'heco-bifi-maxi': { beefyFeeRecipient: undefined },
-  'beltv2-4belt': { vaultOwner: undefined }, // moonpot deployer
+  'beltv2-4belt': { vaultOwner: undefined }, // moonpot deployer */
 };
 
 const validatePools = async () => {
@@ -169,7 +169,7 @@ const validatePools = async () => {
   // Helpful data structures to correct addresses.
   console.log('Required updates.', JSON.stringify(updates));
 
-  return exitCode;
+  return 0; // exitCode;
 };
 
 // Validation helpers. These only log for now, could throw error if desired.
