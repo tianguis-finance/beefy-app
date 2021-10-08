@@ -1,7 +1,8 @@
 const styles = theme => ({
   container: {
     marginBottom: '24px',
-    border: '1px solid ' + theme.palette.background.border,
+    borderRadius: '16px !important',
+    border: '2px solid', // + theme.palette.background.border,
   },
   accordion: {
     width: '100%',

@@ -37,16 +37,15 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             <Hidden xsDown>
               <img
                 alt="BIFI"
-                src={require(`images/BIFI-logo.svg`)}
-                height={'40px'}
+                src={require(`images/tianguis/tianguis.svg`)}
+                height={'160px'}
                 className={classes.logo}
               />
-              beefy.finance
             </Hidden>
             <Hidden smUp>
               <img
                 alt="BIFI"
-                src={require(`images/BIFI-logo.svg`)}
+                src={require(`images/tianguis/tianguis.svg`)}
                 height={'35px'}
                 className={classes.logo}
               />
@@ -54,7 +53,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
           </Button>
         </Link>
 
-        <div className={classes.middleNav}>
+        {/*  <div className={classes.middleNav}>
           <Hidden smDown>
             {renderLink('vote', t('vote'), 'vote-yea', classes)}
             {renderLink('dashboard', t('stats'), 'chart-bar', classes)}
@@ -65,7 +64,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
           <Link className={classes.btnBoost} to={`/${chain}/stake`}>
             <img alt="Boost" src={require('images/stake/boost.svg')} />
           </Link>
-        </div>
+        </div> */}
 
         <Hidden smDown implementation="css">
           <div className={classes.collapse}>{links}</div>

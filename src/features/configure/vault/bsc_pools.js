@@ -23,7 +23,9 @@ export const bscPools = [
     buyTokenUrl: 'https://app.1inch.io/#/56/swap/BNB/BIFI',
   }, */
   /*
+  strat
   0xE0fEa845D9b76c7296834de01f24b3750c69B3b2
+  vault
   0x69afEA336A68aCe7f3bc968529B7DC380227f0D8
 
   */
@@ -32,12 +34,12 @@ export const bscPools = [
     name: 'MORRALLA-BNB LP',
     token: 'MORRALLA-BNB LP',
     tokenDescription: 'Tianguis Finance',
-    tokenAddress: '0x2a8a0d9f3E18B27b9De5b04Cca02f229C9745D18',
+    tokenAddress: '0xe54b765983fc0a2e15943a5d9fc8b1af7bbc9aa6',
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
-    earnedToken: 'TianguisMorallaBnb',
-    earnedTokenAddress: '0x69afEA336A68aCe7f3bc968529B7DC380227f0D8',
-    earnContractAddress: '0x69afEA336A68aCe7f3bc968529B7DC380227f0D8',
+    earnedToken: 'tianguisMorrallaBnb',
+    earnedTokenAddress: '0xdC1480ec5572624D9cfAa0280FdB65dca2EE157C',
+    earnContractAddress: '0xdC1480ec5572624D9cfAa0280FdB65dca2EE157C',
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'lps',
@@ -52,6 +54,81 @@ export const bscPools = [
     buyTokenUrl:
       'https://pancakeswap.finance/swap?outputCurrency=0x5B6DcF557E2aBE2323c48445E8CC948910d8c2c9',
   },
+  /* {
+    id: 'tianguis-morralla-busd',
+    name: 'MORRALLA-BUSD LP',
+    token: 'MORRALLA-BUSD LP',
+    tokenDescription: 'Tianguis Finance',
+    tokenAddress: '0x8E4b9AC4FA97530ECE7ddD477c2768F462684764',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'TianguisMorallaBusd',
+    earnedTokenAddress: '0xe732C476FAEe60Ba01D62FB99B0154B12a360856',
+    earnContractAddress: '0xe732C476FAEe60Ba01D62FB99B0154B12a360856',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'tianguis-morralla-busd',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'Tianguis',
+    assets: ['MORRALLA', 'BUSD'],
+    addLiquidityUrl:
+      'https://pancakeswap.finance/add/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/BNB',
+    buyTokenUrl:
+      'https://pancakeswap.finance/swap?outputCurrency=0x5B6DcF557E2aBE2323c48445E8CC948910d8c2c9',
+  },
+  {
+    id: 'tianguis-morralla-eth',
+    name: 'MORRALLA-ETH LP',
+    token: 'MORRALLA-ETH LP',
+    tokenDescription: 'Tianguis Finance',
+    tokenAddress: '0x3678463a9805D7B4E59a61C9a3D52C9A6dB54fB0',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'TianguisMorallaEth',
+    earnedTokenAddress: '0xae3fe8b4A4dd4e452a55CaC3f77b49E3d8F51304',
+    earnContractAddress: '0xae3fe8b4A4dd4e452a55CaC3f77b49E3d8F51304',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'tianguis-morralla-eth',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'Tianguis',
+    assets: ['MORRALLA', 'ETH'],
+    addLiquidityUrl:
+      'https://pancakeswap.finance/add/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/BNB',
+    buyTokenUrl:
+      'https://pancakeswap.finance/swap?outputCurrency=0x5B6DcF557E2aBE2323c48445E8CC948910d8c2c9',
+  },
+  {
+    id: 'tianguis-morralla-ada',
+    name: 'MORRALLA-ADA LP',
+    token: 'MORRALLA-ADA LP',
+    tokenDescription: 'Tianguis Finance',
+    tokenAddress: '0x5709e5F67E4492742Ff46890A7107Fbb99CD096E',
+    tokenDecimals: 18,
+    tokenDescriptionUrl: '#',
+    earnedToken: 'TianguisMorallaAda',
+    earnedTokenAddress: '0x4bEda140fF7Df935F451A1335BD174e57e9b1dCf',
+    earnContractAddress: '0x4bEda140fF7Df935F451A1335BD174e57e9b1dCf',
+    pricePerFullShare: 1,
+    tvl: 0,
+    oracle: 'lps',
+    oracleId: 'tianguis-morralla-ada',
+    oraclePrice: 0,
+    depositsPaused: false,
+    status: 'active',
+    platform: 'Tianguis',
+    assets: ['MORRALLA', 'ADA'],
+    addLiquidityUrl:
+      'https://pancakeswap.finance/add/0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82/BNB',
+    buyTokenUrl:
+      'https://pancakeswap.finance/swap?outputCurrency=0x5B6DcF557E2aBE2323c48445E8CC948910d8c2c9',
+  }, */
   /* 
   {
     id: 'cakev2-cake-busd',

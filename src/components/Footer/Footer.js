@@ -13,8 +13,8 @@ const Footer = () => {
   return (
     <div className={classes.root}>
       <div className={classes.column}>
-        <div className={classes.title}>beefy.finance</div>
-        <a
+        <div className={classes.title}>tianguis.finance</div>
+        {/*  <a
           href="https://docs.beefy.finance"
           target="_blank"
           rel="noopener noreferrer"
@@ -22,9 +22,9 @@ const Footer = () => {
         >
           <i className={`fas fa-book ${classes.linkIcon}`}></i>
           <span>docs</span>
-        </a>
+        </a> */}
 
-        <a
+        {/*  <a
           href="https://medium.com/beefyfinance"
           target="_blank"
           rel="noopener noreferrer"
@@ -32,10 +32,10 @@ const Footer = () => {
         >
           <i className={`fab fa-medium ${classes.linkIcon}`}></i>
           <span>{t('news')}</span>
-        </a>
+        </a> */}
 
         <a
-          href="https://github.com/beefyfinance"
+          href="https://github.com/tianguis-finance"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.link}
@@ -45,7 +45,7 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className={classes.column}>
+      {/* <div className={classes.column}>
         <div className={classes.title}>{t('products')}</div>
         <a
           href="https://gov.beefy.finance"
@@ -76,12 +76,12 @@ const Footer = () => {
           <i className={`fas fa-hand-holding-usd ${classes.linkIcon}`}></i>
           <span>app</span>
         </a>
-      </div>
+      </div> */}
 
       <div className={classes.column}>
         <div className={classes.title}>{t('socials')}</div>
         <a
-          href="https://twitter.com/beefyfinance"
+          href="https://twitter.com/tianguis_fi"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.link}
@@ -91,7 +91,7 @@ const Footer = () => {
           <span>twitter</span>
         </a>
         <a
-          href="https://t.me/beefyfinance"
+          href="https://t.me/tianguisfinance"
           target="_blank"
           rel="noopener noreferrer"
           className={classes.link}
@@ -100,7 +100,7 @@ const Footer = () => {
 
           <span>telegram</span>
         </a>
-        <a
+        {/*         <a
           href="https://discord.gg/yq8wfHd"
           target="_blank"
           rel="noopener noreferrer"
@@ -109,6 +109,7 @@ const Footer = () => {
           <i className={`fab fa-discord ${classes.linkIcon}`}></i>
           <span>discord</span>
         </a>
+ */}{' '}
       </div>
     </div>
   );
