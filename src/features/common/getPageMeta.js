@@ -7,11 +7,11 @@ const appendTitle = str => str + APPEND_TITLE;
 const translateAppendTitle = (data, key, t) => appendTitle(translate(data, key, t));
 
 // Appended to title and og:title
-const APPEND_TITLE = ' | Beefy Finance';
+const APPEND_TITLE = ' | Tianguis Finance';
 
 // Defined here to avoid adding an entry to translation.json where not needed
 const PAGE_META = {
-  'App-Meta-Title': ({ networkName }) => appendTitle(`${networkName}`),
+  'App-Meta-Title': ({ networkName }) => appendTitle('Bodega'), // (`${networkName}`),
   'Vault-Meta-Title': ({ vaultName, vaultDescription, networkName }) =>
     appendTitle(`${vaultName} - ${vaultDescription} - ${networkName}`),
   'App-Meta-Description': translate,

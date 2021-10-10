@@ -67,7 +67,7 @@ const PoolTitle = ({
         <Typography className={classes.title} variant="body2" gutterBottom>
           {poolId ? (
             <Link to={`/${chain}/vault/${poolId}`} className={classes.url}>
-              {name}
+              <span>{name}</span>
             </Link>
           ) : (
             name

@@ -14,7 +14,7 @@ const Disclaimer = () => {
 
   return (
     <Grid container item className={classes.root} justifyContent="center">
-      <Typography className={classes.disclaimer}>{t('Disclaimer')}</Typography>
+      <h1 className={classes.disclaimer}>{t('Disclaimer')}</h1>
     </Grid>
   );
 };

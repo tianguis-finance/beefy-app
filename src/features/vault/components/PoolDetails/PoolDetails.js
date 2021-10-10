@@ -151,7 +151,6 @@ const PoolDetails = ({ vaultId }) => {
         />
       </Helmet>
       <HomeLink />
-      {vaultId === 'cake-cakev2' ? <CakeV2Banner /> : ''}
       <div className={classes.container}>
         <Grid container alignItems="center" style={{ paddingTop: '20px' }}>
           {vaultStateTitle}

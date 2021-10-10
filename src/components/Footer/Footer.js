@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div className={classes.root}>
       <div className={classes.column}>
-        <div className={classes.title}>tianguis.finance</div>
+        <span className={classes.title}>tianguis.finance</span>
         {/*  <a
           href="https://docs.beefy.finance"
           target="_blank"
@@ -79,7 +79,7 @@ const Footer = () => {
       </div> */}
 
       <div className={classes.column}>
-        <div className={classes.title}>{t('socials')}</div>
+        <span className={classes.title}>{t('socials')}</span>
         <a
           href="https://twitter.com/tianguis_fi"
           target="_blank"

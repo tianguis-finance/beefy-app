@@ -12,15 +12,30 @@
       onload="this.media='all'"
     />
     <title>Tianguis Finance</title>
-    <meta name="description" content="The Tianguis Yield Optimizer" />
+    <meta name="description" content="The Multichain Yield Optimizer" />
 
-    <meta property="og:local" content="es_ES" />
+    <meta property="og:local" content="en_US" />
     <meta property="og:title" content="Tianguis Finance" />
-    <meta property="og:description" content="The Tianguis Yield Optimizer" />
+    <meta property="og:description" content="The Multichain Yield Optimizer" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://bodega.tianguis.finance" />
+    <meta property="og:url" content="https://app.tianguis.finance" />
     <meta property="og:image" content="https://tianguis.finance/img/tianguis.png" />
 
+    <script type="text/javascript">
+      var redirectMap = {
+        'heco.tianguis.finance': 'https://app.tianguis.finance/#/heco',
+        'avax.tianguis.finance': 'https://app.tianguis.finance/#/avax',
+        'polygon.tianguis.finance': 'https://app.tianguis.finance/#/polygon',
+        'fantom.tianguis.finance': 'https://app.tianguis.finance/#/fantom',
+        'harmony.tianguis.finance': 'https://app.tianguis.finance/#/harmony',
+        'arbitrum.tianguis.finance': 'https://app.tianguis.finance/#/arbitrum',
+      };
+      for (var host in redirectMap) {
+        if (host == window.location.host) {
+          window.location.assign(redirectMap[host]);
+        }
+      }
+    </script>
     <script src="https://kit.fontawesome.com/67b38b6e65.js" crossorigin="anonymous"></script>
   </head>
 

@@ -9,8 +9,8 @@ export default function VaultDetailsPage() {
   const { vaultId } = useParams();
   return (
     <>
-      <ScrollToTop />
       <Disclaimer />
+      <ScrollToTop />
       <PoolDetails vaultId={vaultId} />
     </>
   );

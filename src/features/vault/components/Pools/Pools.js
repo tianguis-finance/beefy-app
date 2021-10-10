@@ -71,7 +71,7 @@ export default function Pools() {
 
   return (
     <Grid container className={classes.container}>
-      <Grid item xs={6}>
+      {/* <Grid item xs={6}>
         <h1 className={classes.title}>{t('Vault-Network')}</h1>
         <NetworksToggle />
         {fetchVaultsDataDone && activePoolCount && (
@@ -79,17 +79,18 @@ export default function Pools() {
             <span className={classes.text}>{`${activePoolCount} ${t('Vault-MainTitle')}`}</span>
           </>
         )}
-      </Grid>
+      </Grid> */}
+      <Grid item xs={6} />
       <Grid item xs={6}>
         <div className={classes.tvl}>
-          <span className={classes.title}>
+          <h1 className={classes.title}>
             TVL{' '}
             {fetchVaultsDataDone && poolsTvl > 0 ? (
               formatGlobalTvl(poolsTvl)
             ) : (
               <TVLLoader className={classes.titleLoader} />
             )}
-          </span>
+          </h1>
 
           {/*  {fetchBifibuybackDone && chainBifibuyback && (
             <span className={classes.text}>

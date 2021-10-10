@@ -13,12 +13,13 @@ import Menu from '@material-ui/icons/Menu';
 import Close from '@material-ui/icons/Close';
 import WbSunny from '@material-ui/icons/WbSunny';
 import NightsStay from '@material-ui/icons/NightsStay';
+import Disclaimer from 'components/Disclaimer/Disclaimer';
 import { getNetworkBuyUrl } from '../../features/helpers/getNetworkData';
 import styles from './styles';
 
 const useStyles = makeStyles(styles);
 
-const Header = ({ links, isNightMode, setNightMode }) => {
+const Header = ({ links, isNightMode = true, setNightMode }) => {
   const { chain } = useParams();
 
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -30,22 +31,22 @@ const Header = ({ links, isNightMode, setNightMode }) => {
   };
 
   return (
-    <AppBar className={`${classes.appBar} ${classes.dark}`} position="relative">
+    <AppBar className={`${classes.appBar} ${classes.dark}`}>
       <Toolbar className={classes.container}>
         <Link to={`/${chain}`}>
           <Button className={classes.title}>
             <Hidden xsDown>
               <img
-                alt="BIFI"
-                src={require(`images/tianguis/tianguis.svg`)}
+                alt="TIANGUIS FINANCE"
+                src={require(`images/tianguis/tianguis.png`)}
                 height={'160px'}
                 className={classes.logo}
               />
             </Hidden>
             <Hidden smUp>
               <img
-                alt="BIFI"
-                src={require(`images/tianguis/tianguis.svg`)}
+                alt="TIANGUIS"
+                src={require(`images/tianguis/tianguis.png`)}
                 height={'35px'}
                 className={classes.logo}
               />
@@ -99,7 +100,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             <Close />
           </IconButton>
           <div className={classes.appResponsive}>{links}</div>
-          <div style={{ textAlign: 'center' }}>
+          {/*    <div style={{ textAlign: 'center' }}>
             <LinkSidebar name="vote" label={t('vote')} icon="vote-yea" classes={classes} />
             <LinkSidebar name="dashboard" label={t('stats')} icon="chart-bar" classes={classes} />
             <LinkSidebar name="docs" label={t('docs')} icon="book" classes={classes} />
@@ -108,7 +109,7 @@ const Header = ({ links, isNightMode, setNightMode }) => {
             <IconButton onClick={setNightMode} className={classes.icon}>
               {isNightMode ? <WbSunny /> : <NightsStay />}
             </IconButton>
-          </div>
+          </div> */}
         </Drawer>
       </Hidden>
     </AppBar>
@@ -135,7 +136,7 @@ const LinkSidebar = ({ name, label, icon, classes }) => (
 );
 
 const getLinkUrl = name => {
-  return name === 'buy' ? getNetworkBuyUrl() : `https://${name}.beefy.finance`;
+  return name === 'buy' ? getNetworkBuyUrl() : `https://${name}.tianguis.finance`;
 };
 
 export default Header;

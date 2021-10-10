@@ -9,10 +9,8 @@ const styles = theme => ({
   disclaimer: {
     padding: '12px',
     borderRadius: '0',
-    background: theme.palette.background.secondary,
-    marginBottom: '2rem',
+    margin: '2rem',
     fontWeight: 900,
-    color: theme.palette.text.primary,
   },
 });
 

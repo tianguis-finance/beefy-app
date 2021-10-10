@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { SnackbarProvider } from 'notistack';
 import { Notifier } from 'features/common';
 import Footer from 'components/Footer/Footer';
+import Disclaimer from 'components/Disclaimer/Disclaimer';
 import Pastures from 'components/Pastures/Pastures';
 import { NetworkConnectNotice } from 'components/NetworkConnectNotice/NetworkConnectNotice';
 import appStyle from './jss/appStyle.js';
@@ -67,6 +68,7 @@ export default function App({ children }) {
         <SnackbarProvider>
           <ScrollToTop />
           <div className={classes.page}>
+            <Disclaimer />
             <Header
               links={
                 <HeaderLinks
@@ -95,7 +97,8 @@ export default function App({ children }) {
               </div>
             </div>
             <Footer />
-            <Pastures />
+            {/*             <Pastures />
+             */}
           </div>
         </SnackbarProvider>
       </ThemeProvider>

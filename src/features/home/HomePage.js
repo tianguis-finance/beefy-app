@@ -6,7 +6,6 @@ import Disclaimer from 'components/Disclaimer/Disclaimer';
 export default function HomePage() {
   return (
     <>
-      <Disclaimer />
       <Pools fromPage="home" />
     </>
   );

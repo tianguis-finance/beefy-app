@@ -14,10 +14,105 @@
   font-family: 'Font Awesome 5 Brands' !important;
 }
 
+@import url('https://rsms.me/inter/inter.css');
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+* {
+  font-family: 'Montserrat';
+}
 body {
+  img {
+    margin: 0;
+    height: auto;
+  }
   margin: 0;
-  padding: 0;
-  background-color: #fbf9f6;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 7s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+
+  :hover {
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .three-line-legend {
+    display: none !important;
+  }
+}
+
+.tv-lightweight-charts {
+  width: 100% !important;
+
+  & > * {
+    width: 100% !important;
+  }
+}
+
+h1 {
+  text-align: center;
+  background: linear-gradient(
+    10deg,
+    hsl(0, 75%, 50%) 10%,
+    hsl(60, 75%, 50%) 85%,
+    hsl(0, 75%, 50%) 85%
+  );
+
+  text-shadow: 0.5px -0.3vw #fff4;
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+span {
+  text-align: center;
+  background: linear-gradient(
+    10deg,
+    hsl(0, 75%, 50%) 10%,
+    hsl(60, 75%, 50%) 85%,
+    hsl(0, 75%, 50%) 85%
+  );
+
+  text-shadow: 0.5px -0.1vw #fff4;
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes BeProud {
+  100% {
+    background-position: 100vw 0px;
+  }
+}
+
+@keyframes Always {
+  100% {
+    transform: scale(1.1);
+  }
 }
 
 .tooltip-toggle {

@@ -16,12 +16,12 @@ import {
 
 const styles = theme => ({
   appBar: {
+    margin: '0',
     display: 'flex',
     border: '0',
-    borderRadius: '3px',
-    padding: '0.625rem 0',
-    marginBottom: '20px',
-    color: grayColor[15],
+    borderRadius: '0px',
+    padding: '0 0',
+    color: 'transparent',
     width: 'calc(100% - 20px)',
     margin: '0 auto',
     backgroundColor: whiteColor,
@@ -78,7 +78,7 @@ const styles = theme => ({
     },
   },
   appResponsive: {
-    margin: '20px 10px 0 10px',
+    margin: '0px 10px 0 10px',
     marginTop: '0px',
   },
   primary: {
@@ -155,8 +155,8 @@ const styles = theme => ({
   white: {
     border: '0',
     padding: '0.625rem 0',
-    marginBottom: '20px',
-    color: grayColor[15],
+    marginBottom: '0px',
+    color: 'transparent',
     backgroundColor: whiteColor + ' !important',
     boxShadow:
       '0 4px 18px 0px rgba(' +
@@ -216,7 +216,7 @@ const styles = theme => ({
     overflow: 'visible',
   },
   logo: {
-    marginRight: '12px',
+    marginRight: '0px',
   },
   middleNav: {
     display: 'flex',
