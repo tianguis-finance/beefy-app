@@ -52,6 +52,8 @@ const PoolDetails = ({ vaultId }) => {
   const launchpoolApr = usePoolApr(launchpoolId);
   const multipleLaunchpools = activeLaunchpools.length > 1;
 
+  console.log('apy', apys);
+
   useEffect(() => {
     const unsubscribes = activeLaunchpools.map(launchpoolId =>
       subscribe(launchpoolId, {

@@ -47,6 +47,7 @@ const fetchLPs = async () => {
 
   try {
     const response = await axios.get(`https://bodega-api.tianguis.finance/lps?_=${cacheBuster}`);
+    console.log('lps response', response);
     return response.data;
   } catch (err) {
     console.error(err);

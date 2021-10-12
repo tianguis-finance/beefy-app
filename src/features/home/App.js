@@ -68,7 +68,6 @@ export default function App({ children }) {
         <SnackbarProvider>
           <ScrollToTop />
           <div className={classes.page}>
-            <Disclaimer />
             <Header
               links={
                 <HeaderLinks
