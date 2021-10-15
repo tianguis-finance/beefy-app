@@ -54,17 +54,17 @@ export const bscPools = [
     buyTokenUrl:
       'https://pancakeswap.finance/swap?outputCurrency=0x5B6DcF557E2aBE2323c48445E8CC948910d8c2c9',
   },
-  /* {
+  {
     id: 'tianguis-morralla-busd',
     name: 'MORRALLA-BUSD LP',
     token: 'MORRALLA-BUSD LP',
     tokenDescription: 'Tianguis Finance',
-    tokenAddress: '0x8E4b9AC4FA97530ECE7ddD477c2768F462684764',
+    tokenAddress: '0xa36c4c7d11732681e58cbb7b8716acb8871ec4c3',
     tokenDecimals: 18,
     tokenDescriptionUrl: '#',
-    earnedToken: 'TianguisMorallaBusd',
-    earnedTokenAddress: '0xe732C476FAEe60Ba01D62FB99B0154B12a360856',
-    earnContractAddress: '0xe732C476FAEe60Ba01D62FB99B0154B12a360856',
+    earnedToken: 'tianguisMorallaBusd',
+    earnedTokenAddress: '0x78f2644B9Ba56A0BB931Be310fbBBbfbB607fCaF',
+    earnContractAddress: '0x78f2644B9Ba56A0BB931Be310fbBBbfbB607fCaF',
     pricePerFullShare: 1,
     tvl: 0,
     oracle: 'lps',
@@ -79,6 +79,7 @@ export const bscPools = [
     buyTokenUrl:
       'https://pancakeswap.finance/swap?outputCurrency=0x5B6DcF557E2aBE2323c48445E8CC948910d8c2c9',
   },
+  /*
   {
     id: 'tianguis-morralla-eth',
     name: 'MORRALLA-ETH LP',
