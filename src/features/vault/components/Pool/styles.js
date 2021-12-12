@@ -1,8 +1,10 @@
 const styles = theme => ({
   container: {
     marginBottom: '24px',
-    borderRadius: '16px !important',
-    border: '2px solid', // + theme.palette.background.border,
+    borderRadius: '0px',
+    border: '1px solid hotpink', // + theme.palette.background.border,
+    boxShadow:
+      'rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px',
   },
   accordion: {
     width: '100%',

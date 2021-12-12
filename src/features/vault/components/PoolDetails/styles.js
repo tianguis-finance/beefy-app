@@ -9,7 +9,7 @@ const styles = theme => ({
     margin: '20px 0',
     fontSize: '14px',
     fontWeight: 'bold',
-    borderRadius: '5px',
+    borderRadius: '0px',
     backgroundColor: primaryColor[0],
     '& .MuiButton-label': {
       color: 'white',
@@ -19,7 +19,7 @@ const styles = theme => ({
     position: 'relative',
     backgroundColor: theme.palette.background.extra,
     padding: '24px',
-    border: '1px solid ' + theme.palette.background.border,
+    border: '0px solid ' + theme.palette.background.border,
   },
   heading: {
     color: theme.palette.primary.main,

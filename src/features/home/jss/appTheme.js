@@ -18,7 +18,7 @@ const createThemeMode = isNightMode =>
         overlay: isNightMode ? 'rgba(0, 0, 0, 0.75)' : 'rgba(255, 255, 255, 0.75)',
       },
       primary: {
-        main: isNightMode ? '#fff' : '#000',
+        main: isNightMode ? '#fff' : '#888',
       },
       secondary: {
         main: isNightMode ? '#fff' : '#F8F2EC',

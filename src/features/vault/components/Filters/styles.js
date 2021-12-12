@@ -2,7 +2,9 @@ const styles = theme => ({
   container: {
     padding: '24px',
     margin: '8px 0 2rem',
-    border: '1px solid ' + theme.palette.background.border,
+    border: '1px solid hotpink',
+    boxShadow:
+      'rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px',
     backgroundColor: theme.palette.background.primary,
     justifyContent: 'space-between',
     position: 'relative',
