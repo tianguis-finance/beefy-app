@@ -67,6 +67,7 @@ export default function App({ children }) {
       <ThemeProvider theme={theme}>
         <SnackbarProvider>
           <ScrollToTop />
+          <Disclaimer />
           <div className={classes.page}>
             <Header
               links={

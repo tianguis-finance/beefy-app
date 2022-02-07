@@ -24,7 +24,7 @@ export const bscPools = [
       'https://tianguis.finance/swap?outputCurrency=0xadcBAEbaac0f775923eBDFb6B904399DA8801275',
   },
     // pcs router abajo todo 0s
-   {
+  /*  {
     id: 'tianguis-morralla-bnb',
     name: 'MORRALLA-BNB LP',
     token: 'MORRALLA-BNB LP',
@@ -47,7 +47,7 @@ export const bscPools = [
     addLiquidityUrl: 'https://tianguis.finance/add/0xadcBAEbaac0f775923eBDFb6B904399DA8801275/BNB',
     buyTokenUrl:
       'https://tianguis.finance/swap?outputCurrency=0xadcBAEbaac0f775923eBDFb6B904399DA8801275',
-  },
+  }, */
   {
     id: 'tianguis-morralla-busd',
     name: 'MORRALLA-BUSD LP',
