@@ -1,12 +1,12 @@
 export const bscPools = [
   {
-    id: 'tianguis-morralla-bnb',
+    id: 'Tianguis-MORRALLA-BNB',
     name: 'MORRALLA-BNB LP',
     token: 'MORRALLA-BNB LP',
     tokenDescription: 'Tianguis Finance',
     tokenAddress: '0x7D30522145e302841387049B7ba857BD8ad30548',
     tokenDecimals: 18,
-    tokenDescriptionUrl: '#',
+    tokenDescriptionUrl: 'https_',
     earnedToken: 'tianguisMorrallaBnb',
     earnedTokenAddress: '0x64dfaccD87a4E033a75BE5c4E5199fafd6851146',
     earnContractAddress: '0x64dfaccD87a4E033a75BE5c4E5199fafd6851146',

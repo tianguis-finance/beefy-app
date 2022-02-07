@@ -34,7 +34,7 @@ const fetchTokens = async () => {
   const cacheBuster = getApiCacheBuster();
 
   try {
-    const response = await axios.get(`https://bodega-api.tianguis.finance/prices?_=${cacheBuster}`);
+    const response = await axios.get(`https://vaultsapi.hyperjump.app/prices?_=${cacheBuster}`);
     return response.data;
   } catch (err) {
     console.error(err);
@@ -46,7 +46,7 @@ const fetchLPs = async () => {
   const cacheBuster = getApiCacheBuster();
 
   try {
-    const response = await axios.get(`https://bodega-api.tianguis.finance/lps?_=${cacheBuster}`);
+    const response = await axios.get(`https://vaultsapi.hyperjump.app/lps?_=${cacheBuster}`);
     console.log('lps response', response);
     return response.data;
   } catch (err) {

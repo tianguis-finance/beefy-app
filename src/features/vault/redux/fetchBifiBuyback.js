@@ -16,7 +16,7 @@ export function fetchBifibuyback() {
 
     return new Promise((resolve, reject) => {
       const cacheBuster = getApiCacheBuster();
-      const doRequest = axios.get(`https://bodega-api.tianguis.finance/bifibuyback?_=${cacheBuster}`);
+      const doRequest = axios.get(`https://vaultsapi.hyperjump.app/bifibuyback?_=${cacheBuster}`);
 
       doRequest.then(
         res => {

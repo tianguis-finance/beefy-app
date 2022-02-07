@@ -17,7 +17,7 @@ export function fetchApys() {
     return new Promise((resolve, reject) => {
       const cacheBuster = getApiCacheBuster();
       const doRequest = axios.get(
-        `https://bodega-api.tianguis.finance/apy/breakdown?_=${cacheBuster}`
+        `https://vaultsapi.hyperjump.app/apy/breakdown?_=${cacheBuster}`
       );
 
       doRequest.then(
