@@ -38,7 +38,7 @@ export default function App({ children }) {
   const [web3Modal, setModal] = useState(null);
 
   const { isNightMode, setNightMode } = useNightMode();
-  const theme = useMemo(() => getTheme(isNightMode ? 'dark' : 'light'), [isNightMode]);
+  const theme = useMemo(() => getTheme(true ? 'dark' : 'light'), [isNightMode]);
   const useStyles = useMemo(() => {
     return makeStyles(appStyle, { defaultTheme: theme });
   }, [theme]);
@@ -67,7 +67,7 @@ export default function App({ children }) {
       <ThemeProvider theme={theme}>
         <SnackbarProvider>
           <ScrollToTop />
-          <Disclaimer />
+{/*           <Disclaimer /> */}
           <div className={classes.page}>
             <Header
               links={
